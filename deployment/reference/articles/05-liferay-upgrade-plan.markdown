@@ -9,30 +9,28 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
 
 <ol type="I">
   <li><a href="/deployment/deployment/-/knowledge_base/6-2/upgrading-liferay">If you're on Liferay Portal 6.1 or lower, upgrade to to Liferay Portal 6.2</a></li>
-  <li><a href="https://dev.liferay.com/home">Upgrade your @product@ database and configuration</a></li>
+  <li><a href="https://dev.liferay.com/home">Upgrade your @product@ database and configuration.</a>Note, step <em>D. Prepare a new @product@ production server</em> can be done in parallel with steps <em>A. through C.</em></li>
   <ol type="A">
-    <li><a href="https://dev.liferay.com/home">Prepare for upgrade</a></li>
+    <li><a href="https://dev.liferay.com/home">Examine the deprecated applications: Remove unwanted applications from production and note ones to modify after upgrading to @product-ver@</a></li>
+    <li><a href="https://dev.liferay.com/home">Test upgrading a database copy</a></li>
     <ol type="1">
-      <li><a href="https://dev.liferay.com/home">Examine the deprecated applications</a></li>
-      <li><a href="https://dev.liferay.com/home">Prune your database</a></li>
-      <ol type="a">
-          <li><a href="https://dev.liferay.com/home">Use the UI to remove unused entities (sites, groups, pages, content, etc.). Note these entities.</a></li>
-          <li><a href="https://dev.liferay.com/home">On another server, prune a copy of the database</a></li>
-          <ol type="i">
-            <li><a href="https://dev.liferay.com/home">Copy the complete production backup to a test server</a></li>
-            <li><a href="https://dev.liferay.com/home">Note unused entities in tables more populated than expected.</a></li>
-            <li><a href="https://dev.liferay.com/home">Use the UI or script console to remove the unused entities.</a></li>
-            <li><a href="https://dev.liferay.com/home">Install @product-ver@ on the test server</a></li>
-            <li><a href="https://dev.liferay.com/home">Upgrade the test database to @product-ver@ (Follow steps in <em>C. Upgrade the database to @product-ver@</em>, then return here)</a></li>
-            <li>Analyze the upgrade log in depth</li>
-            <li><a href="https://dev.liferay.com/home">If parts of the upgrade takes longer than you like, start again at step <em>1</em> to identify and remove more unused entities; otherwise, continue.</a></li>
-            <li><a href="https://dev.liferay.com/home">Test the portal accordingly after these changes</a></li>
-          </ol>
-          <li><a href="https://dev.liferay.com/home">Use UI or script console to remove the noted unused entities from the production database</a></li>
-      </ol>
-      <li>Upgrade production marketplace apps</li>
+      <li>Copy the production database and save the copy logs.</li>
+      <li>Copy the production installation to a test server and configure it to use the database copy.</li>
+      <li>Check the UI and database copy logs for unused entities (sites, users, pages, etc.)</li>
+      <li><a href="https://dev.liferay.com/home">Use the script console or UI to remove the noted unused entities</a></li>
+      <li>Install @product-ver@ on a test server and configure it to use the database copy</li>
+      <li>Upgrade the database to @product-ver@ (see step <em>D.</em>); then return here</li>
+      <li>If the upgrade took too long, search the upgrade log to identify more unused entities. Then start back at step <em>1.</em> with a fresh copy of the production database.</li>
+      <li>Test this upgraded portal and resolve any issues</li>
+      <li>Checkpoint: Noted all unused entities to remove from production</li>
+    </ol>
+    <li>Prepare to upgrade the production database</li>
+    <ol type="1">
+      <li>Remove all noted unused entities</li>
+      <li>Upgrade your Marketplace apps</li>
       <li>Publish all staged changes to production</li>
-      <li>Synchronize a complete @product@ backup</li>
+      <li>Synchronize a complete @product@ backup, including your pruned production database</li>
+      <li>Checkpoint: Ready to upgrade the production database
     </ol>
     <li>Prepare a new @product@ production server</li>
     <ol type="1">
@@ -45,16 +43,17 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
         <li>Convert applicable properties to OSGi configurations</li>
       </ol>
       <li>Disable indexing</li>
+      <li>Checkpoint: Prepared the new @product@ production server
     </ol>
-    <li>Tune your database for the upgrade process, point to the future article https://issues.liferay.com/browse/LRDOCS-5880</li>
-    <li>Upgrade the database to @product-ver@</li>
+    <li>Upgrade the database</li>
     <ol type="1">
+      <li><a href="https://issues.liferay.com/browse/LRDOCS-5880">Tune your database for the upgrade</a></li>
       <li>Configure the database upgrade</li>
       <li>Upgrade the core</li>
       <ol type="a">
         <li>Run the data upgrade tool</li>
         <li>Resolve any core upgrade issues</li>
-        <li>If the issues were with upgrades to @product@ 7.0 or lower, restore the pruned database backup</li>
+        <li>If the issues were with upgrades to @product@ 7.0 or lower, restore the pruned production database backup</li>
         <li>Upgrade your resolved issues (step <em>a</em>); continue if there were no issues</li>
       </ol>
       <li>Upgrade the @product@ modules, if you didn't upgrade them automatically with the core</li>
@@ -64,6 +63,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
         <li>Resolve any module upgrade issues</li>
         <li>Upgrade your resolved module issues (step <em>a</em>); continue if there were no issues</li>
       </ol>
+      <li>Checkpoint: Completed upgrading the database
     </ol>
     <li>Execute post-upgrade Tasks</li>
     <ol type="1">
@@ -71,6 +71,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
       <li>Re-enable and re-index the search indexes</li>
       <li>Update web content permissions (@product@ 7.0 and lower)</li>
       <li>Address deprecated apps</li>
+      <li>Checkpoint: Completed post-upgrade tasks
     </ol>
   </ol>
   <li>Upgrade your custom plugins to @product-ver@</li>
