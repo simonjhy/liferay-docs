@@ -24,7 +24,9 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
             <li><a href="https://dev.liferay.com/home">Use the UI or script console to remove the unused entities.</a></li>
             <li><a href="https://dev.liferay.com/home">Install @product-ver@ on the test server</a></li>
             <li><a href="https://dev.liferay.com/home">Upgrade the test database to @product-ver@ (Follow steps in <em>C. Upgrade the database to @product-ver@</em>, then return here)</a></li>
+            <li>Analyze the upgrade log in depth</li>
             <li><a href="https://dev.liferay.com/home">If parts of the upgrade takes longer than you like, start again at step <em>1</em> to identify and remove more unused entities; otherwise, continue.</a></li>
+            <li><a href="https://dev.liferay.com/home">Test the portal accordingly after these changes</a></li>
           </ol>
           <li><a href="https://dev.liferay.com/home">Use UI or script console to remove the noted unused entities from the production database</a></li>
       </ol>
@@ -44,6 +46,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
       </ol>
       <li>Disable indexing</li>
     </ol>
+    <li>Tune your database for the upgrade process, point to the future article https://issues.liferay.com/browse/LRDOCS-5880</li>
     <li>Upgrade the database to @product-ver@</li>
     <ol type="1">
       <li>Configure the database upgrade</li>
@@ -64,6 +67,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
     </ol>
     <li>Execute post-upgrade Tasks</li>
     <ol type="1">
+      <li>Remove the database tunning made for the upgrade process</li>
       <li>Re-enable and re-index the search indexes</li>
       <li>Update web content permissions (@product@ 7.0 and lower)</li>
       <li>Address deprecated apps</li>
