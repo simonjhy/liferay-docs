@@ -30,7 +30,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
       <li>Upgrade your Marketplace apps</li>
       <li>Publish all staged changes to production</li>
       <li>Synchronize a complete @product@ backup, including your pruned production database</li>
-      <li>Checkpoint: Ready to upgrade the production database
+      <li>Checkpoint: Ready to upgrade the production database</li>
     </ol>
     <li>Prepare a new @product@ production server</li>
     <ol type="1">
@@ -43,7 +43,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
         <li>Convert applicable properties to OSGi configurations</li>
       </ol>
       <li>Disable indexing</li>
-      <li>Checkpoint: Prepared the new @product@ production server
+      <li>Checkpoint: Prepared the new @product@ production server</li>
     </ol>
     <li>Upgrade the database</li>
     <ol type="1">
@@ -63,7 +63,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
         <li>Resolve any module upgrade issues</li>
         <li>Upgrade your resolved module issues (step <em>a</em>); continue if there were no issues</li>
       </ol>
-      <li>Checkpoint: Completed upgrading the database
+      <li>Checkpoint: Completed upgrading the database</li>
     </ol>
     <li>Execute post-upgrade Tasks</li>
     <ol type="1">
@@ -71,7 +71,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
       <li>Re-enable and re-index the search indexes</li>
       <li>Update web content permissions (@product@ 7.0 and lower)</li>
       <li>Address deprecated apps</li>
-      <li>Checkpoint: Completed post-upgrade tasks
+      <li>Checkpoint: Completed post-upgrade tasks</li>
     </ol>
   </ol>
   <li>Upgrade your custom plugins to @product-ver@</li>
