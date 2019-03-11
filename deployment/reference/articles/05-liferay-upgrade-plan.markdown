@@ -18,6 +18,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
       <li>Copy the production installation to a test server and configure it to use the database copy.</li>
       <li>Check the UI and database copy logs for unused entities (sites, users, pages, etc.)</li>
       <li><a href="https://dev.liferay.com/home">Use the script console or UI to remove the noted unused entities</a></li>
+      <li>Test @product@ with its pruned database</li>
       <li>Install @product-ver@ on a test server and configure it to use the database copy</li>
       <li>Upgrade the database to @product-ver@ (see step <em>D.</em>); then return here</li>
       <li>If the upgrade took too long, search the upgrade log to identify more unused entities. Then start back at step <em>1.</em> with a fresh copy of the production database.</li>
@@ -27,6 +28,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
     <li>Prepare to upgrade the production database</li>
     <ol type="1">
       <li>Remove all noted unused entities</li>
+      <li>Test @product@ with its pruned database</li>
       <li>Upgrade your Marketplace apps</li>
       <li>Publish all staged changes to production</li>
       <li>Synchronize a complete @product@ backup, including your pruned production database</li>
