@@ -44,6 +44,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
         <li>Update your portal properties</li>
         <li>Convert applicable properties to OSGi configurations</li>
       </ol>
+      <li>Configure your Documents and Media file store</li>
       <li>Disable indexing</li>
       <li>Checkpoint: Prepared the new @product@ production server</li>
     </ol>
