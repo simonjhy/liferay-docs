@@ -49,7 +49,7 @@ doing this, you'll encounter this error:
 If this is the case, roll back to your previous backup of Liferay Portal 6.2 and
 [find and remove duplicate field names](/discover/deployment/-/knowledge_base/6-2/upgrading-liferay#find-and-remove-duplicate-field-names). 
 
-## Step 3: Find and Remove Unused Objects
+## Step 4: Find and Remove Unused Objects
 
 In the UI or using database queries, identify unused objects. Then remove them using Liferay's API, via Liferay's UI, the
 [script console](/discover/portal/-/knowledge_base/7-2/running-scripts-from-the-script-console),
@@ -63,7 +63,7 @@ or a portlet you create.
 
 Here are some common places to check for unused objects:
 
-###  Objects From the Large/Populated Tables
+### Step 4a: Objects From the Large/Populated Tables
 
 The table records reflect @product@ objects. Tables that are large or that have
 many records might contain lots of unused objects. The greater the following
@@ -109,7 +109,7 @@ Liferay's API (e.g., the UI or
 [script console](/discover/portal/-/knowledge_base/7-2/running-scripts-from-the-script-console))
 to delete the objects. 
 
-### Common Object Types Worth Checking 
+### Step 4b: Common Object Types Worth Checking 
 
 Some object types are often worthwhile to check for unused objects. Here are some reasons for checking them:
 
@@ -190,7 +190,7 @@ Check these object types:
         portlets. These portlet instances have a different lifecycle, and
         aren't deleted when the portlet is removed from a template.
 
-## Step 4: Test @product@ with its pruned database copy
+## Step 5: Test @product@ with its pruned database copy
 
 Find and resolve any issues related to the objects you removed. You can always
 restart pruning a new copy of your production database if you can't resolve an
@@ -199,13 +199,13 @@ issue.
 Once you've successfully tested @product@ with its pruned database copy, you can
 upgrade the database to @product-ver@. 
 
-## Step 5: Install @product-ver@ on a test server and configure it to use the pruned database 
+## Step 6: Install @product-ver@ on a test server and configure it to use the pruned database 
 
 [Prepare a new test server with @product-ver@](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server). 
 Configure it to use the pruned database copy. You'll use the new test server's
 Liferay upgrade tool next. 
 
-## Step 6: Upgrade the database 
+## Step 7: Upgrade the database 
 
 Upgrade the database to @product-ver@ (see
 [Upgrade the Database](/deployment/docs/-/knowledge_base/7-2/upgrade-the-database));
@@ -214,7 +214,7 @@ then return here.
 If the upgrade took too long, search the upgrade log to identify more unused
 objects. Then start back at Step 1 with a fresh copy of the production database. 
 
-## Step 7: Test the upgraded portal and resolve any issues 
+## Step 8: Test the upgraded portal and resolve any issues 
 
 Test this upgraded @product-ver@ instance and resolve any issues. If you can't resolve an issue, start back at Step 1 with a fresh copy of the production database. 
 
