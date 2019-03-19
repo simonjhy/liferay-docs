@@ -84,13 +84,6 @@ organizations.children.types[regular-organization]=regular-organization,location
 organizations.country.enabled[regular-organization]=false
 organizations.country.required[regular-organization]=false
 organizations.rootable[location]=false
----
-header-id: organizations-children-typeslocation
----
-
-#organizations.children.types[location]=
-
-[TOC levels=1-4]
 organizations.country.enabled[location]=true
 organizations.country.required[location]=true
 layout.set.prototype.propagate.logo=true
@@ -101,6 +94,12 @@ discussion.comments.format=bbcode
 discussion.max.comments=0
 dl.file.entry.thumbnail.max.height=128
 dl.file.entry.thumbnail.max.width=128
+```
+
+This property was removed:
+
+```properties
+organizations.children.types[location]
 ```
 
 The latest
