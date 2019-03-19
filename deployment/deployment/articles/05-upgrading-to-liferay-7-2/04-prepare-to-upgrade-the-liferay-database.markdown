@@ -3,6 +3,10 @@
 Now that you've successfully upgraded a copy of your @product@ database, you're
 ready to prepare for upgrading your production database. 
 
+| **Tip:** This step and
+| [preparing a new @product@ server](/deployment/deployment/-/knowledge_base/7-2/prepare-a-new-product-server)
+| can be done in parallel to save time. 
+
 ## Step 1: Remove All Unused Objects You Identified Earlier
 
 Previously you identified and removed unused objects from a copy of your
