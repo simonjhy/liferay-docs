@@ -1,4 +1,10 @@
+---
+header-id: upgrading-to-product-ver
+---
+
 # Upgrading to @product-ver@
+
+[TOC levels=1-4]
 
 Your sites are critical to you and Liferay wants to make sure your upgrade to
 @product-ver@ is safe, complete, and efficient. Upgrading involves upgrading

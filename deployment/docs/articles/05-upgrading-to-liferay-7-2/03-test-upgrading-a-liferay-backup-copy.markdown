@@ -1,4 +1,10 @@
+---
+header-id: test-upgrading-a-product-backup-copy
+---
+
 # Test Upgrading a @product@ Backup Copy
+
+[TOC levels=1-4]
 
 Before upgrading your production @product@ instance, you'll want to make sure
 that you can upgrade it correctly and efficiently. By removing unused objects
@@ -11,7 +17,7 @@ upgraded server successfully you can confidently upgrade your @product@
 database. 
 
 | **Tip:** This step and
-| [preparing a new @product@ server](/deployment/deployment/-/knowledge_base/7-2/prepare-a-new-product-server)
+| [preparing a new @product@ server](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server)
 | can be done in parallel to save time. 
 
 ## Step 1: Copy the Production Installation to a Test Server
@@ -195,14 +201,14 @@ upgrade the database to @product-ver@.
 
 ## Step 5: Install @product-ver@ on a test server and configure it to use the pruned database 
 
-[Prepare a new test server with @product-ver@](/deployment/deployment/-/knowledge_base/7-2/prepare-a-new-product-server). 
+[Prepare a new test server with @product-ver@](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server). 
 Configure it to use the pruned database copy. You'll use the new test server's
 Liferay upgrade tool next. 
 
 ## Step 6: Upgrade the database 
 
 Upgrade the database to @product-ver@ (see
-[Upgrade the Database](/deployment/deployment/-/knowledge_base/7-2/upgrade-the-database));
+[Upgrade the Database](/deployment/docs/-/knowledge_base/7-2/upgrade-the-database));
 then return here. 
 
 If the upgrade took too long, search the upgrade log to identify more unused

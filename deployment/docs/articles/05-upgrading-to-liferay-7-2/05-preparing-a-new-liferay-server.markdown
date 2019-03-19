@@ -1,4 +1,10 @@
-# Prepare a New @product@ Server 
+---
+header-id: preparing-a-new-product-server
+---
+
+# Preparing a New @product@ Server
+
+[TOC levels=1-4]
 
 As you progress toward upgrading your @product@ database, it's best to prepare a
 new server for hosting @product-ver@. You'll use this server to run the
@@ -20,9 +26,9 @@ data upgrade.
 
 ## Step 2: Install @product-ver@ 
 
-[Install @product@ on your application server](/deployment/deployment/-/knowledge_base/7-2/deploying-product)
+[Install @product@ on your application server](/deployment/docs/-/knowledge_base/7-2/deploying-product)
 or
-[use @product@ bundled with your application server of choice](/deployment/deployment/-/knowledge_base/7-2/installing-product). 
+[use @product@ bundled with your application server of choice](/deployment/docs/-/knowledge_base/7-2/installing-product). 
 
 | **Important:** Do not start your application server. It's not ready to start 
 | until after the @product@ database upgrade. 
@@ -30,7 +36,7 @@ or
 ## Step 3: Install the Latest Upgrade Patch or Fix Pack (Liferay DXP only)
 
 Install the upgrade patch (if you requested it from Liferay Support) or the 
-[latest Fix Pack](/deployment/deployment/-/knowledge_base/7-2/patching-product). 
+[latest Fix Pack](/deployment/docs/-/knowledge_base/7-2/patching-product). 
 
 ## Step 4: Migrate Your OSGi Configurations (@product@ 7.0+)
 
@@ -78,7 +84,13 @@ organizations.children.types[regular-organization]=regular-organization,location
 organizations.country.enabled[regular-organization]=false
 organizations.country.required[regular-organization]=false
 organizations.rootable[location]=false
+---
+header-id: organizations-children-typeslocation
+---
+
 #organizations.children.types[location]=
+
+[TOC levels=1-4]
 organizations.country.enabled[location]=true
 organizations.country.required[location]=true
 layout.set.prototype.propagate.logo=true
@@ -157,7 +169,7 @@ changed for document storage:
     3.  Copy the `.config` file to your `[Liferay Home]/osgi/configs` folder.
 
 The
-[Document Repository Configuration](/deployment/deployment/-/knowledge_base/7-2/document-repository-configuration)
+[Document Repository Configuration](/deployment/docs/-/knowledge_base/7-2/document-repository-configuration)
 provides more document store configuration details. 
 
 ## Step 7: Disable Indexing

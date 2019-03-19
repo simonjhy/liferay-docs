@@ -1,10 +1,16 @@
-# Prepare to Upgrade the @product@ Database 
+---
+header-id: preparing-to-upgrade-the-product-database
+---
+
+# Preparing to Upgrade the @product@ Database
+
+[TOC levels=1-4]
 
 Now that you've successfully upgraded a copy of your @product@ database, you're
 ready to prepare for upgrading your production database. 
 
 | **Tip:** This step and
-| [preparing a new @product@ server](/deployment/deployment/-/knowledge_base/7-2/prepare-a-new-product-server)
+| [preparing a new @product@ server](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server)
 | can be done in parallel to save time. 
 
 ## Step 1: Remove All Unused Objects You Identified Earlier
