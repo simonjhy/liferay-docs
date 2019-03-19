@@ -45,5 +45,17 @@ Upgrading comprises these main steps:
     of upgrading by restoring your database optimizations, enabling and
     regenerating your search indexes, and more. 
 
-Liferay guides you through each of the above steps, so you can start running on
-@product-ver@ as soon as possible. 
+Here are the data upgrade paths: 
+
+| Data Upgrade Path                              | Description                |
+| ---------------------------------------------- | -------------------------- |
+| Liferay Portal 6.0.x &rarr; Liferay Portal 6.2 | Support life ended for 6.0 |
+| Liferay Portal 6.1.x &rarr; @product@ 7.1      | Support life ended for 6.1 |
+| Liferay Portal 6.2+ &rarr; @product@ 7.2       |                            |
+| @product@ 7.0+ &rarr; @product@ 7.2            |                            |
+
+| **Note:** Liferay Portal 6.0+ *code* can be upgraded directly to @product@ 
+| 7.2.
+
+Liferay guides you through each of the upgrade steps, so you can start running
+on @product-ver@ as soon as possible. 

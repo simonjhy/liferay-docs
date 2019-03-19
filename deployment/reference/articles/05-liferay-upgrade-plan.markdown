@@ -8,7 +8,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
 ## Upgrade Steps
 
 <ol type="I">
-  <li><a href="/deployment/deployment/-/knowledge_base/6-2/upgrading-liferay">If you're on Liferay Portal 6.1 or lower, upgrade to to Liferay Portal 6.2</a></li>
+  <li><a href="/deployment/deployment/-/knowledge_base/6-2/upgrading-liferay">If you're on Liferay Portal 6.0.x, upgrade to Liferay Portal 6.2. If you're on Liferay Portal 6.1.x, upgrade to @product@ 7.1.</a></li>
   <li><a href="https://dev.liferay.com/home">Upgrade your @product@ database and configuration.</a>Note, step <em>D. Prepare a new @product@ production server</em> can be done in parallel with steps <em>A. through C.</em></li>
   <ol type="A">
     <li><a href="https://dev.liferay.com/home">Examine the deprecated applications: Remove unwanted applications from production and note ones to modify after upgrading to @product-ver@</a></li>
