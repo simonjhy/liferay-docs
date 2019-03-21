@@ -1,8 +1,8 @@
 ---
-header-id: preparing-a-new-product-server
+header-id: preparing-a-new-product-production-server-for-data-upgrade
 ---
 
-# Preparing a New @product@ Server
+# Preparing a New @product@ Server for Data Upgrade
 
 [TOC levels=1-4]
 

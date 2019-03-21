@@ -17,7 +17,7 @@ upgraded server successfully you can confidently upgrade your @product@
 database. 
 
 | **Tip:** This step and
-| [preparing a new @product@ server](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server)
+| [preparing a new @product@ server](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server-for-data-upgrade)
 | can be done in parallel to save time. 
 
 ## Step 1: Copy the Production Installation to a Test Server
@@ -201,11 +201,15 @@ upgrade the database to @product-ver@.
 
 ## Step 6: Install @product-ver@ on a test server and configure it to use the pruned database 
 
-[Prepare a new test server with @product-ver@](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server). 
+[Prepare a new test server with @product-ver@](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server-for-data-upgrade). 
 Configure it to use the pruned database copy. You'll use the new test server's
 Liferay upgrade tool next. 
 
-## Step 7: Upgrade the database 
+## Step 7: Tune Your Database for the Upgrade 
+
+[Tune your database for the upgrade](/deployment/docs/-/knowledge_base/7-2/tune-your-database-for-the-upgrade). 
+
+## Step 8: Upgrade the database 
 
 Upgrade the database to @product-ver@ (see
 [Upgrade the Database](/deployment/docs/-/knowledge_base/7-2/upgrade-the-database));
@@ -214,7 +218,7 @@ then return here.
 If the upgrade took too long, search the upgrade log to identify more unused
 objects. Then start back at Step 1 with a fresh copy of the production database. 
 
-## Step 8: Test the upgraded portal and resolve any issues 
+## Step 9: Test the upgraded portal and resolve any issues 
 
 Test this upgraded @product-ver@ instance and resolve any issues. If you can't resolve an issue, start back at Step 1 with a fresh copy of the production database. 
 
