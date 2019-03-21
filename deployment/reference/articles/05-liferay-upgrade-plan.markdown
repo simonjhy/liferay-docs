@@ -9,32 +9,32 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
 
 <ol type="I">
   <li><a href="/deployment/deployment/-/knowledge_base/6-2/upgrading-liferay">If you're on Liferay Portal 6.0.x, upgrade to Liferay Portal 6.2. If you're on Liferay Portal 6.1.x, upgrade to @product@ 7.1.</a></li>
-  <li><a href="https://dev.liferay.com/home">Upgrade your @product@ database and configuration.</a>Note, step <em>D. Prepare a new @product@ production server</em> can be done in parallel with steps <em>A. through C.</em></li>
+  <li><a href="/deployment/docs/upgrading-to-product-ver">Upgrade your @product@ database and configuration.</a>Note, step <em>D. Prepare a new @product@ production server</em> can be done in parallel with steps <em>A. through C.</em></li>
   <ol type="A">
-    <li><a href="https://dev.liferay.com/home">Examine the deprecated applications: Remove unwanted applications from production and note ones to modify after upgrading to @product-ver@</a></li>
-    <li><a href="https://dev.liferay.com/home">Test upgrading a database copy</a></li>
+    <li><a href="/deployment/docs/planning-for-deprecated-applications">Examine the deprecated applications: Remove unwanted applications from production and note ones to modify after upgrading to @product-ver@</a></li>
+    <li><a href="/deployment/docs/test-upgrading-a-product-backup-copy">Test upgrading a database copy</a></li>
     <ol type="1">
       <li>Copy the production database and save the copy logs.</li>
       <li>Copy the production installation to a test server and configure it to use the database copy.</li>
-      <li>Check the UI and database copy logs for unused entities (sites, users, pages, etc.)</li>
-      <li><a href="https://dev.liferay.com/home">Use the script console or UI to remove the noted unused entities</a></li>
+      <li>Check the @product@ UI and database copy logs for unused objects (sites, users, pages, etc.)</li>
+      <li>Use the script console or UI to remove the noted unused objects</li>
       <li>Test @product@ with its pruned database</li>
       <li>Install @product-ver@ on a test server and configure it to use the database copy</li>
-      <li>Upgrade the database to @product-ver@ (see step <em>D.</em>); then return here</li>
-      <li>If the upgrade took too long, search the upgrade log to identify more unused entities. Then start back at step <em>1.</em> with a fresh copy of the production database.</li>
+      <li>Upgrade the database to @product-ver@ (see step <em>E. Upgrade the @product@ data</em>); then return here</li>
+      <li>If the upgrade took too long, search the upgrade log to identify more unused objects. Then start back at step <em>1.</em> with a fresh copy of the production database.</li>
       <li>Test this upgraded portal and resolve any issues</li>
-      <li>Checkpoint: Noted all unused entities to remove from production</li>
+      <li>Checkpoint: Noted all unused objects and how to remove them</li>
     </ol>
-    <li>Prepare to upgrade the production database</li>
+    <li><a href="/deployment/docs/preparing-to-upgrade-the-product-database">Prepare to upgrade the production database</a></li>
     <ol type="1">
-      <li>Remove all noted unused entities</li>
+      <li>Remove all noted unused objects</li>
       <li>Test @product@ with its pruned database</li>
       <li>Upgrade your Marketplace apps</li>
       <li>Publish all staged changes to production</li>
       <li>Synchronize a complete @product@ backup, including your pruned production database</li>
       <li>Checkpoint: Ready to upgrade the production database</li>
     </ol>
-    <li>Prepare a new @product@ production server</li>
+    <li><a href="/deployment/docs/preparing-a-new-product-server-for-data-upgrade">Prepare a new @product@ server for data upgrade</a></li>
     <ol type="1">
       <li>Install @product-ver@</li>
       <li>Install the latest fix pack (DXP only)</li>
@@ -48,18 +48,18 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
       <li>Disable indexing</li>
       <li>Checkpoint: Prepared the new @product@ production server</li>
     </ol>
-    <li>Upgrade the database</li>
+    <li><a href="/deployment/docs/upgrading-the-product-data">Upgrade the @product@ data</a></li>
     <ol type="1">
-      <li><a href="https://issues.liferay.com/browse/LRDOCS-5880">Tune your database for the upgrade</a></li>
-      <li>Configure the database upgrade</li>
-      <li>Upgrade the core</li>
+      <li><a href="/deployment/docs/tuning-your-database-for-the-upgrade">Tune your database for the upgrade</a></li>
+      <li><a href="/deployment/docs/configuring-the-data-upgrade">Configure the data upgrade</a></li>
+      <li><a href="/deployment/docs/upgrading-the-core-using-the-upgrade-tool">Upgrade the core</a></li>
       <ol type="a">
         <li>Run the data upgrade tool</li>
         <li>Resolve any core upgrade issues</li>
         <li>If the issues were with upgrades to @product@ 7.0 or lower, restore the pruned production database backup</li>
         <li>Upgrade your resolved issues (step <em>a</em>); continue if there were no issues</li>
       </ol>
-      <li>Upgrade the @product@ modules, if you didn't upgrade them automatically with the core</li>
+      <li><a href="/deployment/docs/upgrading-modules-using-gogo-shell">Upgrade the @product@ modules, if you didn't upgrade them automatically with the core</a></li>
       <ol type="a">
         <li>Upgrade modules that are ready for upgrade</li>
         <li>Verify upgraded modules</li>
@@ -68,7 +68,7 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
       </ol>
       <li>Checkpoint: Completed upgrading the database</li>
     </ol>
-    <li>Execute post-upgrade Tasks</li>
+    <li><a href="/deployment/docs/executing-post-upgrade-tasks">Execute post-upgrade Tasks</a></li>
     <ol type="1">
       <li>Remove the database tunning made for the upgrade process</li>
       <li>Re-enable and re-index the search indexes</li>
