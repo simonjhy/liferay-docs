@@ -1,7 +1,3 @@
----
-header-id: upgrading-the-product-data
----
-
 # Upgrading the @product@ Data
 
 [TOC levels=1-4]

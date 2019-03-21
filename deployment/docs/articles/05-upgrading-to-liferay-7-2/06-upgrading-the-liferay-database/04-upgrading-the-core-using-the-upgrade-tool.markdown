@@ -1,8 +1,8 @@
 ---
-header-id: upgrading-the-product-core-using-the-upgrade-tool
+header-id: upgrading-the-core-using-the-upgrade-tool
 ---
 
-# Upgrading the @product@ Core Using the Upgrade Tool
+# Upgrading the Core Using the Upgrade Tool
 
 [TOC levels=1-4]
 

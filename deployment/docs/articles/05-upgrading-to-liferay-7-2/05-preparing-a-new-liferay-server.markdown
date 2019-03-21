@@ -1,5 +1,5 @@
 ---
-header-id: preparing-a-new-product-production-server-for-data-upgrade
+header-id: preparing-a-new-product-server-for-data-upgrade
 ---
 
 # Preparing a New @product@ Server for Data Upgrade
