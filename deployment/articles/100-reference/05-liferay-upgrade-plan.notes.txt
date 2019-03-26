@@ -1,0 +1,10 @@
+- step I could be moved to II > A (i don't think it warrants its own top level I 
+unless we plan to break it down in future)
+
+- each step needs a 'title' and a 'summary', so title would be <50 chars, 
+summary can be multiple sentences with links or actions
+- we need to mention that the two categories we are upgrading are database and 
+configuration and Liferay modules/plugins source code (Plugins SDKs or 
+Workspacees), not just custom plugins
+- remove 'production'?
+- should we call them 'upgrade problems' or 'breaking changes'? 
