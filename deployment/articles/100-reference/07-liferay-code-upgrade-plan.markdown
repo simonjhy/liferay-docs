@@ -20,7 +20,7 @@ Here are the steps for upgrading your development environment and custom plugins
                 <div class="title"><a href="https://web-community-beta.wedeploy.io/web/guest/docs/7-2/reference/-/knowledge_base/reference/tooling">Create New Liferay Workspace</a></div>
                 <div class="description">If you have an existing 7.x workspace, skip to the next step.</div>
             </li>
-            <li icon="" requirement="required" commandId="import_existing_projects">
+            <li icon="" requirement="required" commandId="import_existing_liferay_workspace">
                 <div class="title"><a href="https://web-community-beta.wedeploy.io/web/guest/docs/7-2/reference/-/knowledge_base/reference/blade-cli">Import Existing Liferay Workspace</a></div>
                 <div class="description">If you do not have an existing 7.x workspace, go to the previous step.</div>
             </li>
@@ -30,11 +30,11 @@ Here are the steps for upgrading your development environment and custom plugins
             <div class="description">Configure your Liferay Workspace settings.</div>
         </li>
         <ol>
-            <li icon="" requirement="required">
+            <li icon="" requirement="required" commandId="configure_bundle_url">
                 <div class="title">Configure Bundle URL</div>
                 <div class="description">Configure your bundle URL.</div>
             </li>
-            <li icon="" requirement="required">
+            <li icon="" requirement="required" commandId="configure_target_platform_version">
                 <div class="title">Configure Target Platform Version</div>
                 <div class="description">Configure your Target Platform version.</div>
             </li>
@@ -49,11 +49,11 @@ Here are the steps for upgrading your development environment and custom plugins
         <div class="description">Migrate your Plugin SDK projects to your Liferay Workspace.</div>
     </li>
     <ol>
-        <li icon="" requirement="required">
+        <li icon="" requirement="required" commandId="import_existing_plugins_sdk">
             <div class="title">Import Existing Plugins SDK Projects</div>
             <div class="description">Import your existing Plugins SDK projects.</div>
         </li>
-        <li icon="" requirement="required">
+        <li icon="" requirement="required" commandId="migrate_existing_plugins_to_workspace">
             <div class="title">Migrate Existing Plugins to Workspace</div>
             <div class="description">Migrate existing plugins to Workspace.</div>
         </li>
@@ -81,11 +81,11 @@ Here are the steps for upgrading your development environment and custom plugins
         <div class="description">Here you'll fix an assortment of problems found in upgrading your code.</div>
     </li>
     <ol>
-        <li icon="" requirement="required">
+        <li icon="" requirement="required" commandId="auto_correct_find_upgrade_problems">
             <div class="title">Auto-Correct Upgrade Problems</div>
             <div class="description">Leverage auto-correct to upgrade code.</div>
         </li>
-        <li icon="" requirement="required">
+        <li icon="" requirement="required" commandId="find_upgrade_problems">
             <div class="title">Find Upgrade Problems</div>
             <div class="description">Find upgrade problems.</div>
         </li>
@@ -93,7 +93,7 @@ Here are the steps for upgrading your development environment and custom plugins
             <div class="title">Resolve Upgrade Problems</div>
             <div class="description">Mark upgrade problems as resolved after addressing them.</div>
         </li>
-        <li icon="" requirement="required">
+        <li icon="" requirement="required" commandId="remove_upgrade_problems_markers">
             <div class="title">Remove Problem Markers</div>
             <div class="description">Remove problem markers.</div>
         </li>
