@@ -1,4 +1,6 @@
-<h1>Liferay Data Upgrade Plan</h1>
+# Liferay Data Upgrade Plan
+
+[TOC levels=1-4]
 
 <p>
 Here are the steps for upgrading your Liferay database and configuration. The steps here outline the process and link to the detailed articles. 
