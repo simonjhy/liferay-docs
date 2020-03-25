@@ -1,8 +1,7 @@
 #!/bin/sh
 
-scriptPath=$(readlink -f "$0")
-
-classpathDir=$(dirname $(dirname "$scriptPath"))/lib
+BIN_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+classpathDir=$BIN_DIR/../lib
 
 if [ $# -lt 1 ]; then
 	echo
