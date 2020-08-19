@@ -60,7 +60,7 @@ You must configure your workspace with the @product@ version you intend to
 upgrade to. You should verify the workspace's
 
 - Bundle URL
-- Target Platform Version
+- Configure Workspace Product Key
 
 The bundle URL version and target platform version must match.
 
@@ -76,13 +76,13 @@ For more information on configuring a workspace's bundle URL, see the
 [Adding a Liferay Bundle to Liferay Workspace](/docs/7-2/reference/-/knowledge_base/r/adding-a-liferay-bundle-to-liferay-workspace)
 article.
 
-### Configuring Target Platform Version
+### Configure Workspace Product Key
 
-The target platform is the @product@ version you intend to develop for in your
+The workspace product key is the @product@ version you intend to develop for in your
 workspace. This is used to specify dependencies associated with a specific
-release. You set the target platform, define your dependencies, and workspace
+release. You set the  workspace product key, define your dependencies, and workspace
 automatically assigns the dependency versions based on the set @product@
-version. When initiating this step, your workspace's Target Platform property is
+version. When initiating this step, your workspace's product key property is
 updated to the latest release of @product-ver@.
 
 For more information on this, see the
