@@ -88,6 +88,11 @@ If you have not set the target platform feature in your workspace, see the
 [Managing the Target Platform](/docs/7-2/reference/-/knowledge_base/r/managing-the-target-platform)
 article for more information.
 
+## Switch to Use Release API Dependency
+
+Switch to use release.dxp.api or release.portal.api as depency whitch include required dependencies.
+You can config this dependency in its `build.gradle` file.
+
 Great! You've successfully upgraded your build dependencies! You likely have
 compile errors in your project; this is because your dependencies may have
 changed. You'll learn how to update that and more next.

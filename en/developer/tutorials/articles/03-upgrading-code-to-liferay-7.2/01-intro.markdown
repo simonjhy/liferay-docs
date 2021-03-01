@@ -96,6 +96,10 @@ Here are the code upgrade steps:
         Remove the project's dependency versions since it's leveraging target
         platform.{.summary}
 
+    4.  [Switch to Use Release API Dependency](/docs/7-2/tutorials/-/knowledge_base/t/upgrading-build-dependencies#switch-to-use-release-api-dependency){.title commandId=switch_to_use_release_api_dependency}
+
+        Switch to use release.dxp.api or release.portal.api as depency whitch include required dependencies.{.summary}
+
 4.  [Fix Upgrade Problems](/docs/7-2/tutorials/-/knowledge_base/t/fixing-upgrade-problems){.title}
 
     Fix common upgrade problems dealing with your project's dependencies and
